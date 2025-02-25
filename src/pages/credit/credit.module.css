@@ -1,0 +1,28 @@
+div.main_credit {
+  height: 100px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+div.main_credit p {
+  align-self: stretch;
+  cursor: default;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_credit p span {
+  transition: all 0.4s;
+}
+div.main_credit p span:hover {
+  color: skyblue;
+}
+
+/*# sourceMappingURL=credit.module.css.map */

@@ -1,0 +1,126 @@
+div.main_introduce {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+div.main_introduce div.introduce_heading {
+  padding: 24px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+div.main_introduce div.introduce_heading h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_introduce div.introduce_heading div.heading_right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+div.main_introduce div.introduce_heading div.heading_right .ic {
+  color: #000;
+  cursor: pointer;
+}
+div.main_introduce div.introduce_heading div.heading_right .ic:nth-of-type(1) {
+  width: 22px;
+  height: 19.723px;
+}
+div.main_introduce div.introduce_heading div.heading_right .ic:nth-of-type(2) {
+  width: 20px;
+  height: 20.004px;
+}
+div.main_introduce div.slides {
+  animation: slides_ani 24s 0.5s infinite forwards;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  aspect-ratio: 3/2;
+}
+div.main_introduce div.slides div.slides_text {
+  padding: 30px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+div.main_introduce div.slides div.slides_text h3 {
+  color: #FFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.2);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_introduce div.slides div.slides_text p {
+  color: #FFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.2);
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_introduce div.slides div.slides_text button {
+  padding: 12px 24px;
+  background: #000;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_introduce div.slides div.slides_text button:hover {
+  background: #ccc;
+  color: black;
+}
+
+@keyframes slides_ani {
+  0% {
+    background-image: url("../../assets/images/slide1.jpg");
+  }
+  33% {
+    background-image: url("../../assets/images/slide2.webp");
+  }
+  66% {
+    background-image: url("../../assets/images/slide3.jpg");
+  }
+  100% {
+    background-image: url("../../assets/images/slide1.jpg");
+  }
+}
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599.9px) {
+  div.main_introduce div.slides div.slides_text h3 {
+    font-size: 36px;
+  }
+  div.main_introduce div.slides div.slides_text p {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*# sourceMappingURL=introduce.module.css.map */

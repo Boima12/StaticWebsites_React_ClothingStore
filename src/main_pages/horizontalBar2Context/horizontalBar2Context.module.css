@@ -1,0 +1,547 @@
+div.main_HorizontalBar2Context {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: flex-start;
+}
+div.main_HorizontalBar2Context div.context_side {
+  width: 250px;
+  height: 100vh;
+  overflow-y: scroll;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  flex-shrink: 0;
+}
+div.main_HorizontalBar2Context div.context_side div.heading {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side div.heading h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 li {
+  height: 43px;
+  padding-left: 16px;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 li p {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 li .ic {
+  color: #000;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 li .ic:nth-of-type(1) {
+  width: 10.002px;
+  height: 14.004px;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 li .ic:nth-of-type(2) {
+  width: 18.004px;
+  height: 14.004px;
+  display: none;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 li:nth-of-type(3) p {
+  color: #000;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 ul.menu11 {
+  margin: 0;
+  padding: 0;
+  transition: all 0.6s;
+  overflow: hidden;
+  height: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  display: none;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 ul.menu11 li {
+  height: 38.5px;
+  padding-left: 40px;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 ul.menu11 li p {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 ul.menu11 li .ic {
+  color: #000;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 ul.menu11 li .ic:nth-of-type(1) {
+  width: 10.002px;
+  height: 14.004px;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 ul.menu11 li .ic:nth-of-type(2) {
+  width: 18.004px;
+  height: 14.004px;
+  display: none;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu1 ul.menu11.open {
+  height: 154px;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu2 li {
+  height: 38.5px;
+  padding-left: 16px;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side ul.menu2 li p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_HorizontalBar2Context div.context_side li:hover {
+  background: #ccc;
+}
+div.main_HorizontalBar2Context div.context_side li:hover p {
+  color: #000 !important;
+}
+div.main_HorizontalBar2Context div.context_side_collapse {
+  width: 100%;
+  height: 100vh;
+  transition: all 0.7s;
+  opacity: 0;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: flex-start;
+  display: none;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side {
+  width: 250px;
+  height: 100vh;
+  background: #FFF;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  flex-shrink: 0;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side div.heading {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side div.heading h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 li {
+  height: 43px;
+  padding-left: 16px;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 li p {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 li .ic {
+  color: #000;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 li .ic:nth-of-type(1) {
+  width: 10.002px;
+  height: 14.004px;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 li .ic:nth-of-type(2) {
+  width: 18.004px;
+  height: 14.004px;
+  display: none;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 li:nth-of-type(3) p {
+  color: #000;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 ul.menu11 {
+  margin: 0;
+  padding: 0;
+  transition: all 0.6s;
+  overflow: hidden;
+  height: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  display: none;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 ul.menu11 li {
+  height: 38.5px;
+  padding-left: 40px;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 ul.menu11 li p {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 ul.menu11 li .ic {
+  color: #000;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 ul.menu11 li .ic:nth-of-type(1) {
+  width: 10.002px;
+  height: 14.004px;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 ul.menu11 li .ic:nth-of-type(2) {
+  width: 18.004px;
+  height: 14.004px;
+  display: none;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu1 ul.menu11.open {
+  height: 154px;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu2 li {
+  height: 38.5px;
+  padding-left: 16px;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side ul.menu2 li p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side li:hover {
+  background: #ccc;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side li:hover p {
+  color: #000 !important;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side div.heading {
+  padding: 15px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side div.heading h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side div.heading .ic {
+  color: #000;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+div.main_HorizontalBar2Context div.context_side_collapse div.context_side div.heading .ic:hover {
+  color: grey;
+}
+div.main_HorizontalBar2Context div.context_side_collapse.open {
+  opacity: 1;
+}
+div.main_HorizontalBar2Context div.newsletter {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.7s;
+  opacity: 0;
+  padding-top: 150px;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+div.main_HorizontalBar2Context div.newsletter div.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.main_HorizontalBar2Context div.newsletter div.panel {
+  width: 90%;
+  max-width: 900px;
+  box-sizing: border-box;
+  padding: 30px 40px 50px 40px;
+  background: #FFF;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+div.main_HorizontalBar2Context div.newsletter div.panel .ic {
+  color: #000;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+div.main_HorizontalBar2Context div.newsletter div.panel .ic:hover {
+  color: grey;
+}
+div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  align-self: stretch;
+}
+div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body p {
+  align-self: stretch;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body input {
+  height: 38.5px;
+  border: 1px solid #CCC;
+  background: #FFF;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  align-self: stretch;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body button {
+  padding: 12px 24px;
+  background: #F44336;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body button:hover {
+  color: #000;
+  background: #ccc;
+}
+div.main_HorizontalBar2Context div.newsletter.open {
+  opacity: 1;
+}
+div.main_HorizontalBar2Context div.context_main {
+  width: calc(100% - 250px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+div.main_HorizontalBar2Context div.context_main div.context_side_nav {
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #000;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+div.main_HorizontalBar2Context div.context_main div.context_side_nav h3 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+div.main_HorizontalBar2Context div.context_main div.context_side_nav .ic {
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.4s;
+  color: #FFF;
+  width: 30px;
+  height: 25px;
+}
+div.main_HorizontalBar2Context div.context_main div.context_side_nav .ic:hover {
+  color: lightgrey;
+}
+div.main_HorizontalBar2Context div.context_main div.spacer {
+  height: 0;
+}
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599.9px) {
+  div.main_HorizontalBar2Context div.context_side {
+    display: none;
+  }
+  div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body h3 {
+    font-size: 24px;
+  }
+  div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body p {
+    font-size: 14px;
+  }
+  div.main_HorizontalBar2Context div.context_main {
+    width: 100%;
+  }
+  div.main_HorizontalBar2Context div.context_main div.context_side_nav {
+    display: flex;
+  }
+  div.main_HorizontalBar2Context div.context_main div.spacer {
+    height: 70px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767.9px) {
+  div.main_HorizontalBar2Context div.context_side {
+    display: none;
+  }
+  div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body h3 {
+    font-size: 24px;
+  }
+  div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body p {
+    font-size: 14px;
+  }
+  div.main_HorizontalBar2Context div.context_main {
+    width: 100%;
+  }
+  div.main_HorizontalBar2Context div.context_main div.context_side_nav {
+    display: flex;
+  }
+  div.main_HorizontalBar2Context div.context_main div.spacer {
+    height: 70px;
+  }
+  div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body h3 {
+    font-size: 30px;
+  }
+  div.main_HorizontalBar2Context div.newsletter div.panel div.panel_body p {
+    font-size: 15px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*# sourceMappingURL=horizontalBar2Context.module.css.map */

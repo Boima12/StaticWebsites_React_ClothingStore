@@ -1,0 +1,158 @@
+div.main_card {
+    width: 22%;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    // outline: 3px solid red;
+
+    div.card_img {
+        width: 100%;
+        margin-bottom: 10px;
+
+        position: relative;
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // flex: 1 0 0;
+        aspect-ratio: 101/125; 
+
+        p.card_tag {
+            padding: 2px 8px;
+            background: #000;     
+            
+            position: absolute;
+            left: 0px;
+            top: 0px;        
+            
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: center;            
+        }
+
+        button {
+            padding: 8px 16px;
+            background: #000; 
+            cursor: pointer; 
+            
+            transition: all 0.4s;
+
+            opacity: 0;
+            visibility: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;         
+            
+            p {
+                transition: all 0.4s;
+
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;                
+            }
+
+            .ic {
+                transition: all 0.4s;
+
+                width: 14px;
+                height: 13px;     
+                color: #FFF;                           
+            }
+
+            &:hover {
+                background: #ccc;
+
+                p, .ic {
+                    color: #000;
+                }
+            }
+        }
+
+        &:hover {
+            button {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    p.card_title {
+        align-self: stretch;        
+
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;        
+    }
+
+    p.card_price {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+
+@mixin screen320 {
+    div.main_card {
+        width: 47%;
+    }
+}
+
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599.9px) {
+    @include screen320;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767.9px) {
+    @include screen320;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.9px) {
+    @include screen320;
+} 
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199.9px) {
+
+} 
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1535.9px) {
+
+} 
+

@@ -1,0 +1,112 @@
+div.main_card {
+  width: 22%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+div.main_card div.card_img {
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 101/125;
+}
+div.main_card div.card_img p.card_tag {
+  padding: 2px 8px;
+  background: #000;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+div.main_card div.card_img button {
+  padding: 8px 16px;
+  background: #000;
+  cursor: pointer;
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+div.main_card div.card_img button p {
+  transition: all 0.4s;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+div.main_card div.card_img button .ic {
+  transition: all 0.4s;
+  width: 14px;
+  height: 13px;
+  color: #FFF;
+}
+div.main_card div.card_img button:hover {
+  background: #ccc;
+}
+div.main_card div.card_img button:hover p, div.main_card div.card_img button:hover .ic {
+  color: #000;
+}
+div.main_card div.card_img:hover button {
+  opacity: 1;
+  visibility: visible;
+}
+div.main_card p.card_title {
+  align-self: stretch;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main_card p.card_price {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599.9px) {
+  div.main_card {
+    width: 47%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767.9px) {
+  div.main_card {
+    width: 47%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.9px) {
+  div.main_card {
+    width: 47%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*# sourceMappingURL=card.module.css.map */
